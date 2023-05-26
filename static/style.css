@@ -1,0 +1,327 @@
+* {
+  font-family: -apple-system, 'system-ui', Roboto, 'Helvetica Neue', sans-serif;
+  color: #222;
+}
+body {
+  background: #fafafa;
+  height: 100vh;
+}
+
+.hidden {
+    display: none !important;
+  transition: transform 0.3s ease-in-out;
+}
+
+img {
+  width: 25px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+/* 아이콘 호버 설정 시작 시점 */
+img:hover {
+  transform: scale(1.15);
+}
+#main-right-bottom-div h2:hover {
+  transform: scale(1.02);
+  color: #777;
+}
+/* 아이콘 호버 설정 종료 시점 */
+
+header {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(167, 167, 167, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(167, 167, 167, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(167, 167, 167, 0.75);
+  height: 70px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 2.53rem;
+  height: 100px;
+}
+
+section {
+  -webkit-box-shadow: 1px 1px 8px 2px rgb(198, 198, 198);
+  -moz-box-shadow: 1px 1px 8px 2px rgb(198, 198, 198);
+  box-shadow: 1px 1px 8px 2px rgb(198, 198, 198);
+  border-radius: 25px 25px 25px 25px;
+  max-width: 800px;
+  min-width: 650px;
+  margin: 10%;
+}
+
+app-header {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #c2c1c7;
+  display: flex;
+  flex-direction: column;
+  height: 160px;
+  justify-content: center;
+  border-radius: 25px 25px 0 0;
+}
+
+#app-header-div1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logo {
+  /* <h1> tag*/
+  font-family: -apple-system, 'system-ui', Roboto, 'Helvetica Neue', sans-serif;
+  color: #8e8e93;
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+
+.header-icons {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+}
+
+#app-header-div2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 12px;
+}
+#exchange-icon {
+  width: 28px;
+}
+.language-selector {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222;
+  border-radius: 12px;
+  border: 1px solid #e3e3e5;
+  background: #f8f8f8;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(240, 240, 240, 1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(240, 240, 240, 1);
+  box-shadow: 0px 0px 5px 0px rgba(240, 240, 240, 1);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.language-selector:hover {
+  transform: scale(1.01);
+}
+
+#app-header-div1-1 {
+  margin-left: 10px;
+}
+
+#app-header-div1-3 {
+  margin-right: 10px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  height: 400px;
+}
+
+.main-div {
+  background: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 80%;
+}
+
+.text-container {
+  width: 80%;
+  padding: 20px;
+  color: #111;
+  font-size: 1.1rem;
+  line-height: 1.25;
+}
+
+.main-icons-container {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 20px;
+  gap: 20px;
+}
+
+.main-icons-container img {
+  width: 32px;
+}
+
+#input-main-container {
+  display: flex;
+  flex-direction: column;
+  border-right: solid 1.5px #c2c1c7;
+  border-radius: 0 0 0 20px;
+}
+
+.main-bottom-div {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.main-bottom-div h2 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #8e8e94;
+}
+
+#translate-button {
+  width: 40px;
+}
+#main-right-bottom-div img {
+  padding-left: 8px;
+  width: 18px;
+}
+#main-right-bottom-div h2 {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.main-div {
+  width: 100%;
+  height: 100%;
+}
+
+textarea {
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: none;
+  box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  resize: none;
+  outline: none;
+  /* overflow: hidden; */
+  color: #111;
+  font-size: 1.1rem;
+  line-height: 1.25;
+}
+
+#main-right-div {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 0 20px 0;
+}
+
+#answer {
+  color: #111;
+  font-size: 1.1rem;
+  line-height: 1.25;
+}
+
+#text {
+  line-height: 1.3;
+  height: 100%;
+}
+
+/* 팝오버 */
+.popover {
+    display: none;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+  }
+/* 팝오버 종료 */
+
+/* 언어 바꾸기 모션 */
+#app-header-div2 {
+    position: relative;
+}
+#input-language, #output-language {
+    transition: all 0.4s ease;
+  }
+
+
+  #input-language.move-right {
+    left: 30px;
+    bottom: 0px;
+    transform: translateX(250px);
+    opacity: 0;
+
+  }
+
+  #output-language.move-left {
+    right: 30px;
+    bottom: 0px;
+    transform: translateX(-250px);
+    opacity: 0;
+  }
+/* 언어 바꾸기 모션 종료 */
+
+/* 발음 재생 버튼 만들기 */
+#input-conainer-buttons-conainer {
+    position: relative;
+}
+
+#myPopover-play {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 5px ;
+    padding: 10px;
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+
+}
+
+.play-button-divs {
+    width: 32px; height: 32px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.play-button-divs:nth-child(1){
+    background-image: url(imgs/play-button.png);
+}
+.play-button-divs:nth-child(2){
+    background-image: url(imgs/stop-button.png);
+}
+.play-button-divs:nth-child(3){
+    background-image: url(../static/imgs/pause-button.png);
+}
+.play-button-divs:nth-child(4){
+    margin-left: 4px;
+    margin-top: 2px;
+    width: 24px; height: 24px;
+    background-image: url(../static/imgs/cancel-button.png);
+}
+.play-button-divs:nth-child(1):hover{
+    background-image: url(imgs/hover\ play\ button.png);
+}
+.play-button-divs:nth-child(2):hover{
+    background-image: url(imgs/hover\ stop\ button.png);
+}
+.play-button-divs:nth-child(3):hover{
+    background-image: url(../static/imgs/hover\ pause\ button.png);
+}
+.play-button-divs:nth-child(4):hover{
+
+}
+#speak-left-hidden {
+    z-index: 0;
+}
+
+/* 발음 재생 버튼 만들기 종료 */
