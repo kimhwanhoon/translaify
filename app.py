@@ -2,8 +2,8 @@ import os
 import openai
 from flask import Flask, render_template, request, jsonify
 
-openai.organization = ""
-openai.api_key = ""
+openai.organization = "org-ZO23te7GIhOq1gFO5bPfZpMy"
+openai.api_key = "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"
 
 
 app = Flask(__name__, static_folder='static')

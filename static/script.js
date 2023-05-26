@@ -1,5 +1,6 @@
 const translateBtn = document.getElementById('translate-button');
 
+// 번역하기 기능
 translateBtn.addEventListener("click", () => {
     const textArea = document.getElementById('text');
     const formData = new FormData;
@@ -12,7 +13,7 @@ translateBtn.addEventListener("click", () => {
             $("#answer").text(answer);
         })
 })
-
+// 번역하기 기능 종료
 
 document.getElementById('speak-left').addEventListener('click', ()=> {
     const text = document.getElementById('text').value
