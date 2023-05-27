@@ -3,7 +3,7 @@ import openai
 from flask import Flask, render_template, request, jsonify
 
 openai.organization = "org-ZO23te7GIhOq1gFO5bPfZpMy"
-openai.api_key = "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"
+openai.api_key = ""
 
 
 app = Flask(__name__, static_folder='static')
@@ -26,14 +26,21 @@ def get_help():
 @app.route("/send-request", methods=["GET", "POST"])
 def send_request():
     text = request.form.get("text")
-    result = openai.Completion.create(
+    inputLang = request.form.get("inputLang")
+    outputLang = request.form.get("outputLang")
+    # 걸리는 시간 구하기
+    start_time = time.time()
+
+    response = openai.Completion.create(
         model="text-davinci-003",
-        prompt= "Translate following sentence into French" + text,
+        prompt= f"Translate following sentence in {inputLang} to {outputLang} text to translate: {text}",
         max_tokens=128,
         temperature=0
     )
-
-    return jsonify(result.to_dict())
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+    
+    return jsonify(response.to_dict())
 
 
 # @app.route('/get-answer')

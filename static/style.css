@@ -317,9 +317,7 @@ textarea {
 .play-button-divs:nth-child(3):hover{
     background-image: url(../static/imgs/hover\ pause\ button.png);
 }
-.play-button-divs:nth-child(4):hover{
 
-}
 #speak-left-hidden {
     z-index: 0;
 }

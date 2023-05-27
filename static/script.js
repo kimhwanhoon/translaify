@@ -2,9 +2,13 @@ const translateBtn = document.getElementById('translate-button');
 
 // 번역하기 기능
 translateBtn.addEventListener("click", () => {
-    const textArea = document.getElementById('text');
+    const textArea = document.getElementById('text').value;
+    const inputLang = document.getElementById('input-language').value
+    const outputLang = document.getElementById('output-language').value
     const formData = new FormData;
-    formData.append('text', textArea.value)
+    formData.append('text', textArea)
+    formData.append('inputLang', inputLang)
+    formData.append('outputLang', outputLang)
 
     fetch('/send-request', { method : "POST", body: formData})
         .then(res => res.json())
